@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MPD_Coursework</string>
+    <string name="title_current_incidents">Current Incidents</string>
+    <string name="title_current_roadworks">Current Roadworks</string>
+    <string name="title_planned_roadworks">Planned Roadworks</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

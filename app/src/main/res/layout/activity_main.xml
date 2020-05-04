@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Name: Abel Toth
+Student No:S1828152-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/layout_portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:baselineAligned="false">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottom_navigation"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    app:itemIconTint="@drawable/nav_item_selector"
+    app:itemTextColor="@drawable/nav_item_selector"
+    app:menu="@menu/bottom_nav_menu" />
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:name="gcu.mpd.mpd_coursework.fragments.CurrentRoadworksFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="gcu.mpd.mpd_coursework.fragments.DetailFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="60dp"
+        android:layout_weight="2"
+        tools:layout="@layout/fragment_detail" />
+
+
+</RelativeLayout>
